@@ -1,0 +1,131 @@
+/* estilos.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.navbar .logo img {
+    height: 60px; /* Ajusta esto según el tamaño de tu logo */
+    padding: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* FORMULARIO BUSCADOR*/
+.form-inline {
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    margin-right: 10px;
+}
+/* FORMULARIO INICIO USUARIO */
+.form-inline {
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    margin-right: 10px;
+}
+
+.main-content {
+    padding-bottom: 60px; /* Igual o mayor a la altura del footer */
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 170px; /* Define la altura del footer */
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    position: relative; /* O 'static' si no quieres que sea 'absolute' o 'fixed' */
+    width: 100%; /* Anchura completa */
+}
+
+.custom-carousel {
+    width: 100%; /* Ajusta esto a la anchura deseada */
+    margin: auto;
+}
+
+.custom-carousel .carousel-item img {
+    height: 1000px; /* Ajusta esto a la altura deseada */
+    object-fit: cover; /* Esto mantendrá la proporción de las imágenes */
+}
+
+.news-item {
+    text-align: center;
+    margin-bottom: 30px; /* Espacio entre noticias */
+}
+
+.news-item img {
+    max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    height: auto;
+}
+
+.news-item h2 {
+    text-align: center;
+    /* Estilos para el título */
+}
+
+.news-item p {
+    color: #333;
+    /* Estilos para la descripción */
+}
+
+.custom-image-container {
+    width: 80%; /* O el porcentaje que prefieras */
+    margin: auto; /* Centra el contenedor */
+}
+
+.custom-image-container img {
+    width: 100%; /* Hace que la imagen se ajuste al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.container {
+    text-align: left;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, p {
+    text-align: center;
+}

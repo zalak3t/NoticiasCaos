@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caos News</title>
+    <link rel="stylesheet" href="{% static 'core/css/estilos.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Caos News</h1>
+            </div>
+            <ul class="nav-links">
+                <!-- Agrega tus enlaces aquí -->
+                <li><a href="{% url 'index' %}">Inicio</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <form id="searchForm" class="form-inline">
+                <input class="form-control mr-sm-2" type="search" id="searchInput" placeholder="Buscar noticias..." aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </nav>
+    </header>
+    <article>
+        <h1>"Boric se marcha de Guatemala en medio de tenso cambio de mando: "Arévalo asumirá como Presidente en plenitud de sus funciones"</h1>
+        <p><strong>Autor:</strong> Marcelo Silva</p>
+        <p><strong>Fecha y Ubicación:</strong> 14 de Enero de 2024, Guatemala</p>
+        <p><strong>Categoría:</strong> Ultimo minuto</p>
+        <img src="{% static 'core/img/noticia2.jpg' %}" alt="Imagen Principal de la Noticia 1">
+        <p>Por su parte, el Congreso Nacional de ese país retomó la sesión que permitirá la asunción del nuevo Mandatario guatemalteco.</p>
+        <p>En medio de la fuerte tensión que se vive esta jornada en Guatemala, que ha impedido el realizamiento de la ceremonia de cambio de mando que erigirá como nuevo presidente de ese país a Bernardo Arévalo, el Mandatario Gabriel Boric emprende rumbo a Chile, quedando finalmente ausente de la instancia. Previo a salir del país centroamericano, Boric llamó a su par: "Acabo de conversar con el Presidente Arévalo. Está tranquilo, seguro de que más allá de los últimos intentos burdos de algunos sectores para impedir que tome posesión del cargo, asumirá como Presidente de Guatemala en plenitud de funciones durante esta jornada".</p>
+        <p>La jornada en Guatemala ha estado marcada por protestas, enfrentamientos entre civiles y las fuerzas de seguridad y atraso en el proceso de acreditación de los nuevos diputados, que han retrasado el cambio de mando.</p>
+        <p>Pese a ello, durante la tarde, el Congreso de Guatemala reinició este domingo la sesión convocada para la investidura presidencial del socialdemócrata Bernardo Arévalo, tras un retraso de varias horas por discusiones del proceso de acreditación de los diputados de la nueva legislatura. La sesión se reanudó con el informe de una comisión que calificó las credenciales de los diputados que deben asumir, según la sesión transmitida por la televisión oficial. La decisión debe ser sometida a votación en el pleno del Parlamento.</p>
+        <p>Tras este proceso, debe asumir la nueva legislatura de la que saldrá la junta directiva que juramentará a Arévalo, acto previsto en el Teatro Nacional y que lleva casi cuatro horas de demora. El retraso se debió a que los congresistas no lograban ponerse de acuerdo en la elección de la directiva y discutían si declarar a la bancada de Arévalo "independiente", en virtud de una orden judicial de suspensión del partido Movimiento Semilla. Ante la incertidumbre, delegados de Estados Unidos, la Unión Europea y la Organización de Estados Americanos (OEA), así como algunos gobiernos latinoamericanos, urgieron al Congreso a respetar la voluntad popular y juramentar al presidente electo.</p>
+
+
+        <!-- Aquí puedes agregar una galería de imágenes si la noticia tiene más fotos -->
+    </article>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Caos News. Todos los derechos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos de Uso</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
